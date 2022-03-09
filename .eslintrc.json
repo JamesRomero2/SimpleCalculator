@@ -1,0 +1,14 @@
+{
+    "root" : true,
+    "extends" : "next",
+    "rules" : {
+        "no-unused-vars" : [
+            "error",
+            {
+                "argsIgnorepattern" : "^_",
+                "varsIgnorepattern" : "^_"
+            }
+        ],
+        "react/display-name" : 0
+    }
+}

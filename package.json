@@ -1,0 +1,26 @@
+{
+  "name": "simple_calculator",
+  "version": "1.0.0",
+  "description": "Web Application Calculator built with NextJS Typescript and SASS/SCSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "start": "next start",
+    "build": "next build"
+  },
+  "author": "James Romero, Blue Royalty",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39",
+    "eslint": "^8.10.0",
+    "eslint-config-next": "^12.1.0",
+    "typescript": "^4.6.2"
+  }
+}
