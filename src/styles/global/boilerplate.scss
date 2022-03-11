@@ -1,3 +1,5 @@
+@use "../utils/variables" as vr;
+
 // Document
 html {
     height: 100%;
@@ -8,13 +10,13 @@ body {
     padding: 0;
     height: 100%;
 
-    // background: $color-bg;
-    // color: $color-text;
+    background: var(--bg);
+    color: var(--textColor);
 
-    // font-family: $font-family;
-    // font-size: $font-size;
-    // letter-spacing: $letter-spacing;
-    // line-height: $line-height;
+    font-family: vr.$font-family;
+    font-size: vr.$font-size;
+    letter-spacing: vr.$letter-spacing;
+    line-height: vr.$line-height;
     text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -40,13 +42,11 @@ body {
 
 // Links
 a {
-    // color: $color-link;
     cursor: pointer;
     text-decoration: underline;
 
     &:hover,
     &:focus {
-        // color: $color-link-hover;
         text-decoration: none;
     }
 }

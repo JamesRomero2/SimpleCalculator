@@ -1,0 +1,12 @@
+footer {
+    padding: 5px 0;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    text-align: center;
+    a {
+        color: var(--primary);
+    }
+}

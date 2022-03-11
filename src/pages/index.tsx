@@ -1,8 +1,16 @@
-import React from 'react'
+import Layout from "../components/Layout";
 
 const index = () => {
     return (
-        <div>index</div>
+        <Layout>
+            <div className="container">
+                <main>
+                    <div className="calculator">
+                        Calculator
+                    </div>
+                </main>
+            </div>
+        </Layout>
     )
 }
 
