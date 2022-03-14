@@ -3,6 +3,7 @@
 // Document
 html {
     height: 100%;
+    overflow-y: scroll;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     padding: 0;
     height: 100%;
 
-    background: var(--bg);
+    background: var(--dominant);
     color: var(--textColor);
 
     font-family: vr.$font-family;
@@ -115,4 +116,20 @@ ol,
 li {
     margin: 0;
     padding: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dominant);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--complimentary);
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }

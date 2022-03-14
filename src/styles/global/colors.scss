@@ -1,15 +1,17 @@
 @use "../utils/variables" as vr;
 :root {
-    --primary: #93e3ee;
-    --secondary: #1d717c;
+    --dominant: #93e3ee;
+    --complimentary: #dff6ee;
+    --accent: #fe9ccb;
     --textColor: #000;
     --bg: #fff;
     --white: #fff;
     --black: #000;
 }
 [data-theme="dark"] {
-    --primary: #3d30b8;
-    --secondary: #20167a;
+    --dominant: #20167a;
+    --complimentary: #988ab5;
+    --accent: #005c4f;
     --textColor: #fff;
     --bg: #000;
     --white: #fff;
