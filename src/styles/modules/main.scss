@@ -7,10 +7,13 @@ main {
 
     .calculator {
         background: var(--complimentary);
-        min-width: 310px;
-        min-height: 540px;
+        max-width: 310px;
+        min-height: 500px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &__screen {
             max-width: 100%;
@@ -23,7 +26,7 @@ main {
             justify-content: center;
             gap: 20px;
             font-size: 24px;
-            border: 5px solid var(--dominant);
+            border: 3px solid var(--dominant);
 
             .equation {
                 display: block;
@@ -40,46 +43,47 @@ main {
         }
         &__keypad {
             max-width: 100%;
-            height: 410px;
+            height: 100%;
             margin: 10px;
-
             border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            background-color: white;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 15px;
+            grid-template-columns: repeat(5, 1fr);
 
-            .buttonGroup {
+            > div {
+                border-radius: 10px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border: 1px solid var(--dominant);
+                font-size: 18px;
+            }
+            .toggle {
+                position: relative;
                 width: 100%;
-
-                > button {
-                    height: 50px;
-                    border: none;
-                    border-radius: 10px;
-                }
-                &__1 {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 10px;
-
-                    > button {
-                        width: 100%;
-                    }
-                }
-                &__2 {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 10px;
-
-                    > button {
-                        width: 100%;
-                    }
-                }
+                grid-column: 1 / 6;
+                grid-row: 1;
+            }
+            .btn_sign {
+                font-size: 32px;
+            }
+            .btn_history {
+                width: 100%;
+                grid-column: 1 / 3;
+                grid-row: 2;
+            }
+            .btn_add {
+                height: 100%;
+                grid-column: 5;
+                grid-row: 5 / 7;
+            }
+            .btn_equals {
+                width: 100%;
+                grid-column: 3 / 5;
             }
         }
     }
